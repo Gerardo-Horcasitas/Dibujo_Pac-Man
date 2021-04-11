@@ -1,0 +1,81 @@
+body{
+    background-color: #ccc;
+}
+
+.container_pacman{
+    width: 100vw;
+    height: 500px;
+    background-color: #000000;
+    position: relative;
+}
+
+/* Pac-Man */
+
+.pacman{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.pacman::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #000000;
+    border-left: 100px solid #000000;
+    margin-left: 200px;
+    margin-top: 60px;
+    transform: rotate(45deg);
+}
+
+.pacman::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: 140px;
+    margin-top: 75px;
+}
+
+/* Circulos */
+
+.circulo{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    margin-left: 400px;
+    margin-top: 210px;
+    border-radius: 50%;
+}
+
+.circulo::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+.circulo::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    margin-left: 200px;
+    border-radius: 50%;
+}
